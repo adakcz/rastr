@@ -239,12 +239,3 @@ if os.path.exists("rastr_py.dxf"):
         file_name="rastr_py.dxf",
         mime="application/dxf",
     )
-
-        #st.link_button("Jdi na rastr_py.dxf", "https://adak-rastr/rastr_py.dxf")
-
-        #st.down
-        #st.download_button(
-        #label="Download rastr_py.dxf",
-        #data=file,
-        #file_name="rastr_py.dxf",
-        #)
