@@ -230,7 +230,7 @@ if generuj:
 
         st.write(f"Soubor vytvoren.")
 
-        st.link_button("Jdi na rastr_py.dxf", "https://github.com/adakcz/rastr/blob/main/rastr_py.dxf")
+        st.link_button("Jdi na rastr_py.dxf", "rastr_py.dxf")
        #st.link_button("Jdi na rastr_py.dxf", "https://adak-rastr.rastr_py.dxf")
 
         #st.down
