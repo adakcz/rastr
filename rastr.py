@@ -1,5 +1,6 @@
 import streamlit as st
 import math
+import os
 #import json
 
 # zadani hodnot
@@ -230,20 +231,20 @@ if generuj:
 
         st.write(f"Soubor vytvoren.")
 
-<<<<<<< HEAD
-        #st.link_button("Jdi na rastr_py.dxf", "https://adak-rastr.rastr_py.dxf")
-=======
-        st.link_button("Jdi na rastr_py.dxf", "rastr_py.dxf")
-       #st.link_button("Jdi na rastr_py.dxf", "https://adak-rastr.rastr_py.dxf")
->>>>>>> b8af661440ba02910ad09ad23fbcc47a94c30e48
+if os.path.exists("rastr_py.dxf"):
+    with open("rastr_py.dxf", "rb") as file:
+        st.download_button(
+        label="Download file",
+        data=file,
+        file_name="rastr_py.dxf",
+        mime="application/dxf",
+    )
+
+        #st.link_button("Jdi na rastr_py.dxf", "https://adak-rastr/rastr_py.dxf")
 
         #st.down
         #st.download_button(
         #label="Download rastr_py.dxf",
         #data=file,
         #file_name="rastr_py.dxf",
-<<<<<<< HEAD
         #)
-=======
-        #)
->>>>>>> b8af661440ba02910ad09ad23fbcc47a94c30e48
