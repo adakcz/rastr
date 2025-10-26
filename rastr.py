@@ -229,3 +229,9 @@ if generuj:
         f.write(f"EOF\n")
 
         st.write(f"Soubor vytvoren.")
+
+        #st.link_button("Jdi na rastr_py.dxf", "https://https://adak-rastr.rastr_py.dxf")
+        st.download_button(
+        label="Download rastr_py.dxf",
+        file_name="rastr_py.dxf",
+        )
