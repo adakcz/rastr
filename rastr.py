@@ -4,7 +4,7 @@ import os
 #import json
 
 # zadani hodnot
-H = st.number_input("Velikost mrizky v 1. kvadrantu H (10.0 az 500.0 po 0.1) [mm]", key="H", value=75.0, min_value=10.0, max_value=500.0, step=0.1, format="%0.1f")
+H = st.number_input("Velikost ctvercove mrizky v 1. kvadrantu H (10.0 az 500.0 po 0.1) [mm]", key="H", value=75.0, min_value=10.0, max_value=500.0, step=0.1, format="%0.1f")
 R = st.number_input("Zaobleni rohu R (0.0 az 100.0 po 0.1) [mm]", key="R", value=35.0, min_value=0.0, max_value=100.0, step=0.1, format="%0.1f")
 krok = st.number_input("Krok mrizky (0.1 az 10.0 po 0.1) [mm]", key="krok", value=0.9, min_value=0.1, max_value=10.0, step=0.1, format="%0.1f")
 tloustka = st.number_input("Tloustka car (0.1 az 1.0 po 0.1) [mm]", key="tloustka", value=0.2, min_value=0.1, max_value=1.0, step=0.1, format="%0.1f")
